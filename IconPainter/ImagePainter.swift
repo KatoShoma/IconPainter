@@ -64,16 +64,11 @@ enum ImagePainter {
             Scalar(255, 255, 0, 255),
             Scalar(255, 0, 0, 255)
         ]
+
+        let green: Scalar = Scalar(0, 255, 0, 255)
         let coloringImage = mat.clone()
-        for (index, contour) in contours.enumerated() {
-            Imgproc.drawContours(
-                image: coloringImage,
-                contours: [contour],
-                contourIdx: -1,
-                color: colors[index],
-                thickness: -1
-            )
-        }
+
+        Imgproc.drawContours(image: coloringImage, contours: contours, contourIdx: -1, color: green, thickness: -1)
 
         return coloringImage.toUIImage()
     }
