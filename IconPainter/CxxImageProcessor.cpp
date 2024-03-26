@@ -1,16 +1,16 @@
 //
-//  CxxImagePainter.cpp
+//  CxxImageProcessor.cpp
 //  icon-painter
 //
 //  Created by ShomaKato on 2024/03/17.
 //
 
-#include "CxxImagePainter.hpp"
+#include "CxxImageProcessor.hpp"
 #import "IconPainter-Swift.h"
 
 #import <opencv2/opencv.hpp>
 
-std::vector<uint8_t> CxxImagePainter::findContourFromUIImage(std::string assetName, int image_width, int image_height) {
+std::vector<uint8_t> CxxImageProcessor::findContourFromUIImage(std::string assetName, int image_width, int image_height) {
     std::vector<uint8_t> pixelValues;
     auto imageProcesser = IconPainter::ImageConverter::init(assetName);
     auto pixelValueArray = imageProcesser.getPixelValueFromUIImage();
@@ -37,7 +37,7 @@ std::vector<uint8_t> CxxImagePainter::findContourFromUIImage(std::string assetNa
     return outputPixelValues;
 }
 
-cv::Mat CxxImagePainter::array_to_Mat(std::vector<uint8_t> array, int width, int height, int channel) {
+cv::Mat CxxImageProcessor::array_to_Mat(std::vector<uint8_t> array, int width, int height, int channel) {
     cv::Mat image;
     if (channel == 4) {
         image = cv::Mat(height, width, CV_8UC4, array.data());
@@ -46,10 +46,10 @@ cv::Mat CxxImagePainter::array_to_Mat(std::vector<uint8_t> array, int width, int
     return image;
 }
 
-std::vector<uint8_t> CxxImagePainter::Mat_to_array(cv::Mat image) {
+std::vector<uint8_t> CxxImageProcessor::Mat_to_array(cv::Mat image) {
     std::vector<uint8_t> array;
     array.assign(image.data, image.data + image.total() * image.elemSize());
     return array;
 }
 
-CxxImagePainter::CxxImagePainter() {}
+CxxImageProcessor::CxxImageProcessor() {}

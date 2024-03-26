@@ -23,7 +23,7 @@
 		A29CD7632BA7232500C0CAE5 /* IconPainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CD75B2BA7232300C0CAE5 /* IconPainterView.swift */; };
 		A29CD7662BA7232500C0CAE5 /* ImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CD7602BA7232500C0CAE5 /* ImageConverter.swift */; };
 		A29CD7732BA724AE00C0CAE5 /* ObjcImagePainter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A29CD7702BA724AD00C0CAE5 /* ObjcImagePainter.mm */; };
-		A29CD7742BA724AE00C0CAE5 /* CxxImagePainter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29CD7712BA724AE00C0CAE5 /* CxxImagePainter.cpp */; };
+		A29CD7742BA724AE00C0CAE5 /* CxxImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29CD7712BA724AE00C0CAE5 /* CxxImageProcessor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 		A29CD76E2BA724AC00C0CAE5 /* IconPainter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IconPainter-Bridging-Header.h"; sourceTree = "<group>"; };
 		A29CD76F2BA724AD00C0CAE5 /* ObjcImagePainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcImagePainter.h; sourceTree = "<group>"; };
 		A29CD7702BA724AD00C0CAE5 /* ObjcImagePainter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcImagePainter.mm; sourceTree = "<group>"; };
-		A29CD7712BA724AE00C0CAE5 /* CxxImagePainter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CxxImagePainter.cpp; sourceTree = "<group>"; };
-		A29CD7722BA724AE00C0CAE5 /* CxxImagePainter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CxxImagePainter.hpp; sourceTree = "<group>"; };
+		A29CD7712BA724AE00C0CAE5 /* CxxImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CxxImageProcessor.cpp; sourceTree = "<group>"; };
+		A29CD7722BA724AE00C0CAE5 /* CxxImageProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CxxImageProcessor.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				A29CD75B2BA7232300C0CAE5 /* IconPainterView.swift */,
 				A29CD75A2BA7232300C0CAE5 /* ImagePainter.swift */,
 				A29CD7602BA7232500C0CAE5 /* ImageConverter.swift */,
-				A29CD7712BA724AE00C0CAE5 /* CxxImagePainter.cpp */,
-				A29CD7722BA724AE00C0CAE5 /* CxxImagePainter.hpp */,
+				A29CD7712BA724AE00C0CAE5 /* CxxImageProcessor.cpp */,
+				A29CD7722BA724AE00C0CAE5 /* CxxImageProcessor.hpp */,
 				A29CD76F2BA724AD00C0CAE5 /* ObjcImagePainter.h */,
 				A29CD7702BA724AD00C0CAE5 /* ObjcImagePainter.mm */,
 				A29CD76E2BA724AC00C0CAE5 /* IconPainter-Bridging-Header.h */,
@@ -307,7 +307,7 @@
 				A29CD7662BA7232500C0CAE5 /* ImageConverter.swift in Sources */,
 				A29CD7732BA724AE00C0CAE5 /* ObjcImagePainter.mm in Sources */,
 				A29CD7212BA7205100C0CAE5 /* SceneDelegate.swift in Sources */,
-				A29CD7742BA724AE00C0CAE5 /* CxxImagePainter.cpp in Sources */,
+				A29CD7742BA724AE00C0CAE5 /* CxxImageProcessor.cpp in Sources */,
 				A29CD7622BA7232500C0CAE5 /* ImagePainter.swift in Sources */,
 				A29CD7632BA7232500C0CAE5 /* IconPainterView.swift in Sources */,
 			);

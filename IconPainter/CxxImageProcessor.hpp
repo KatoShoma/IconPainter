@@ -1,20 +1,20 @@
 //
-//  CxxImagePainter.hpp
+//  CxxImageProcessor.hpp
 //  icon-painter
 //
 //  Created by ShomaKato on 2024/03/17.
 //
 
-#ifndef CxxImagePainter_hpp
-#define CxxImagePainter_hpp
+#ifndef CxxImageProcessor_hpp
+#define CxxImageProcessor_hpp
 
 #include <stdio.h>
 #include <iostream>
 #import <opencv2/opencv.hpp>
 
-class CxxImagePainter {
+class CxxImageProcessor {
 public:
-    CxxImagePainter();
+    CxxImageProcessor();
 
     std::vector<uint8_t> findContourFromUIImage(std::string assetName, int image_width, int image_height);
 private:
@@ -23,4 +23,4 @@ private:
     std::vector<uint8_t> Mat_to_array(cv::Mat image);
 };
 
-#endif /* CxxImagePainter_hpp */
+#endif /* CxxImageProcessor_hpp */

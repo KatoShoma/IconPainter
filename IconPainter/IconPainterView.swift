@@ -8,7 +8,7 @@
 import UIKit
 
 final class IconPainterView: UIView {
-    private var cxxImagePainter = CxxImagePainter()
+    private var cxxImagePainter = CxxImageProcessor()
     private let assetName = "icon_wave"
 
     override init(frame: CGRect) {
