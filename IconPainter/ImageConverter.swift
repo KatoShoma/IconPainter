@@ -1,5 +1,5 @@
 //
-//  ImagePainterForCxx.swift
+//  ImageConverter.swift
 //  IconPainter
 //
 //  Created by ShomaKato on 2024/03/17.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class ImagePainterForCxx {
+public class ImageConverter {
     private let image: UIImage
 
     public init(assetName: std.string) {

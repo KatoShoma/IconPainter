@@ -12,7 +12,7 @@
 
 std::vector<uint8_t> CxxImagePainter::findContourFromUIImage(std::string assetName, int image_width, int image_height) {
     std::vector<uint8_t> pixelValues;
-    auto imageProcesser = IconPainter::ImagePainterForCxx::init(assetName);
+    auto imageProcesser = IconPainter::ImageConverter::init(assetName);
     auto pixelValueArray = imageProcesser.getPixelValueFromUIImage();
     int channel = int(imageProcesser.getImageChannel());
     for (const auto &pixelValue: pixelValueArray) {
