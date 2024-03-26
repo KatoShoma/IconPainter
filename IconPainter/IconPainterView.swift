@@ -41,7 +41,7 @@ final class IconPainterView: UIView {
 
 
         let iconPixelValues = Array<UInt8>(
-            cxxImagePainter.findContourFromUIImage(
+            cxxImagePainter.process(
                 assetNameStdString,
                 Int32(imageWidth),
                 Int32(imageHeight)

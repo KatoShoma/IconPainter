@@ -16,7 +16,7 @@ class CxxImageProcessor {
 public:
     CxxImageProcessor();
 
-    std::vector<uint8_t> findContourFromUIImage(std::string assetName, int image_width, int image_height);
+    std::vector<uint8_t> process(std::string assetName, int image_width, int image_height);
 private:
     cv::Mat array_to_Mat(std::vector<uint8_t> array, int width, int height, int channel);
 

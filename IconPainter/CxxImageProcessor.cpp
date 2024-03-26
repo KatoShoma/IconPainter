@@ -10,7 +10,7 @@
 
 #import <opencv2/opencv.hpp>
 
-std::vector<uint8_t> CxxImageProcessor::findContourFromUIImage(std::string assetName, int image_width, int image_height) {
+std::vector<uint8_t> CxxImageProcessor::process(std::string assetName, int image_width, int image_height) {
     std::vector<uint8_t> pixelValues;
     auto imageProcesser = IconPainter::ImageConverter::init(assetName);
     auto pixelValueArray = imageProcesser.getPixelValueFromUIImage();
